@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Project PALLOWEEN 色見本</title>
+  <style>
+    :root {
+      --bg: #fff;
+      --fg: #000;
+    }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-family: sans-serif;
+      padding: 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+    section {
+      flex: 1 1 300px;
+      min-width: 250px;
+    }
+    .swatch {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .box {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #000;
+      flex-shrink: 0;
+    }
+    .info {
+      margin-left: 10px;
+      line-height: 1.4;
+    }
+    #toggle-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+      padding: 5px 10px;
+      background: #ccc;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    let dark = false;
+    function toggleTheme() {
+      dark = !dark;
+      document.documentElement.style.setProperty('--bg', dark ? '#000' : '#fff');
+      document.documentElement.style.setProperty('--fg', dark ? '#fff' : '#000');
+    }
+  </script>
+</head>
+<body>
+  <button id="toggle-btn" onclick="toggleTheme()">テーマ切替</button>
+<section>
+      <div class="swatch">
+        <div class="box" style="background: #FF5F6D;"></div>
+        <p class="info">デマカニレッド<br>#FF5F6D</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #DEFFAD;"></div>
+        <p class="info">デマウサギグリーン<br>#DEFFAD</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #544E53;"></div>
+        <p class="info">主線<br>#544E53</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #757575;"></div>
+        <p class="info">塗り用グレー<br>#757575</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #DBDBDB;"></div>
+        <p class="info">グレスケ１<br>#DBDBDB</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #F8F5FB;"></div>
+        <p class="info">グレスケ２<br>#F8F5FB</p>
+      </div></section><section>
+      <div class="swatch">
+        <div class="box" style="background: #FFC4E2;"></div>
+        <p class="info">アルゴピンク<br>#FFC4E2</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FE93CA;"></div>
+        <p class="info">デマウサギフラワーピンク<br>#FE93CA</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FCEEE3;"></div>
+        <p class="info">リスト兄弟肌色<br>#FCEEE3</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FEC871;"></div>
+        <p class="info">パステルオレンジ<br>#FEC871</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FFFFB8;"></div>
+        <p class="info">パステルイエロー<br>#FFFFB8</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #ADF5FF;"></div>
+        <p class="info">パステルブルー<br>#ADF5FF</p>
+      </div></section><section>
+      <div class="swatch">
+        <div class="box" style="background: #93AAD4;"></div>
+        <p class="info">くすみブルー<br>#93AAD4</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #42CC87;"></div>
+        <p class="info">くすみグリーン<br>#42CC87</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #B2222E;"></div>
+        <p class="info">ガレットレッド<br>#B2222E</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #CC3643;"></div>
+        <p class="info">ガレットレッド2<br>#CC3643</p>
+      </div></section><section>
+      <div class="swatch">
+        <div class="box" style="background: #E2BAFF;"></div>
+        <p class="info">パステルレインボーパープル<br>#E2BAFF</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #BAFFF2;"></div>
+        <p class="info">パステルレインボーブルー<br>#BAFFF2</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #DEFFAD;"></div>
+        <p class="info">パステルレインボーグリーン（デマウサギグリーン）<br>#DEFFAD</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FFFFB8;"></div>
+        <p class="info">パステルレインボーイエロー（パステルイエロー）<br>#FFFFB8</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FFC4E2;"></div>
+        <p class="info">パステルレインボーピンク（アルゴピンク）<br>#FFC4E2</p>
+      </div></section><section>
+      <div class="swatch">
+        <div class="box" style="background: #FF00FF;"></div>
+        <p class="info">purple<br>#FF00FF</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #0000FF;"></div>
+        <p class="info">blue<br>#0000FF</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #00FFFF;"></div>
+        <p class="info">aqua<br>#00FFFF</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #00FF00;"></div>
+        <p class="info">lime<br>#00FF00</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FFFF00;"></div>
+        <p class="info">yellow<br>#FFFF00</p>
+      </div>
+      <div class="swatch">
+        <div class="box" style="background: #FF0000;"></div>
+        <p class="info">red<br>#FF0000</p>
+      </div></section></body></html>
